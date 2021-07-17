@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keshav Bokhoree - FAQ </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Frequency Asked Question (FAQ)</h1>
+
+    <div id="questionContainer">
+
+        <div id="question1Box" class="questionDiv"> 
+            <h2 >Lorem ipsum dolor sit, amet consectetur adipisicing elit. </h2>
+            <button class="button">+</button>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, delectus, optio officia tempora quasi maxime reprehenderit quidem repellat suscipit natus voluptatibus temporibus alias aut sit blanditiis voluptates ut, dicta nihil.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, delectus, optio officia tempora quasi maxime reprehenderit quidem repellat suscipit natus voluptatibus temporibus alias aut sit blanditiis voluptates ut, dicta nihil.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, delectus, optio officia tempora quasi maxime reprehenderit quidem repellat suscipit natus voluptatibus temporibus alias aut sit blanditiis voluptates ut, dicta nihil.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, delectus, optio officia tempora quasi maxime reprehenderit quidem repellat suscipit natus voluptatibus temporibus alias aut sit blanditiis voluptates ut, dicta nihil.</p>
+        </div>
+
+        <div id="question2Box" class="questionDiv">
+            <h2 >Lorem ipsum dolor sit, amet consectetur adipisicing elit. </h2>
+            <button class="button">+</button>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, delectus, optio officia tempora quasi maxime reprehenderit quidem repellat suscipit natus voluptatibus temporibus alias aut sit blanditiis voluptates ut, dicta nihil.</p>
+        </div>
+
+       
+
+        <div id="question3Box" class="questionDiv">
+            <h2 >Lorem ipsum dolor sit, amet consectetur adipisicing elit. </h2>
+            <button class="button">+</button>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, delectus, optio officia tempora quasi maxime reprehenderit quidem repellat suscipit natus voluptatibus temporibus alias aut sit blanditiis voluptates ut, dicta nihil.</p>
+        </div>
+
+    </div>
+
+    <script>
+
+        let div = document.querySelectorAll(".questionDiv")
+
+        div.forEach(question => {
+
+            let button = question.querySelector(".button")
+
+            button.addEventListener('click', ()=>{
+                question.classList.toggle("animated")
+    
+                div.forEach((item)=>{
+                    if (item != question){
+                        item.classList.remove("animated")
+                    }
+                })
+            })
+
+        })
+
+    </script>
+
+
+
+</body>
+</html>

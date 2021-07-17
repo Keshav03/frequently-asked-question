@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{position: relative;
+    width: 100vw;
+    height: auto;
+    background: rgb(247, 127, 151);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1{
+
+    margin-top: 75px;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 27px;
+}
+
+#questionContainer{
+    position: relative;
+    margin-top: 75px;}
+
+.questionDiv{
+    position: relative;
+    width: 60%;
+    height:45px;
+    margin: 0 auto;
+    background: rgb(223, 164, 164);
+    margin-bottom: 25px;
+    padding: 15px 25px;
+    overflow: hidden;
+}
+
+.questionDiv h2{
+    position: relative;
+    color:white;
+    margin-bottom: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.questionDiv button{
+    position: absolute;    
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    right:5%;
+    top: 15px;
+    cursor: pointer;
+}
+
+.questionDiv p{
+    position: relative;
+    color:white;
+    margin-bottom: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+}
+
+.animated{   
+    height: auto;
+    transition:3s ease;  
+} 
+    
